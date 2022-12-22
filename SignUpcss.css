@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Caramel&family=Poiret+One&family=Quicksand:wght@300&family=Signika:wght@300&family=Titan+One&display=swap');
+
+@font-face {
+    font-family: 'Manuscribe Free Ita0';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Manuscribe Free Ita0'), url('DoughImg/manuscribe-free-cufonfonts-webfont/ManuscribeFree-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'JosefinSans-Regular';
+    src: url(DoughImg/josefin-sans/JosefinSans-Regular.ttf);
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+input{
+    all:unset;
+}
+.button{
+    border: none;
+}
+.container{
+    margin: 100px auto 0 auto;
+    width: 50%;
+    display: flex;
+}
+.doughnuts{
+    width: 12%;
+}
+.letter{
+    font-family: 'Manuscribe Free Ita0';
+    font-size: 50px;
+    margin: 15px;
+}
+.signup_ctnt{
+    padding-left: 30px;
+    width: 88%;
+    border-left: 1px solid black;
+}
+.s_title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    margin: 6px 0px 6px 0px;
+}
+.fn_ln{
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+.name{
+    font-family: 'Signika', sans-serif;
+    font-size: 24px;
+}
+.fn{
+    width: 47.5%;
+}
+.ln{
+    width: 47.5%;
+    margin-left: 5%;
+}
+.inp{
+    border: 1px solid black;
+    border-radius: 13px;
+    height: 46px;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.usr_name,.pass,.cnf_pass,.address{
+    margin-bottom: 20px;
+}
+.sub_btn{
+    display: flex;
+}
+.signUp,.cans{
+    margin: 0 10px 0 10px;
+}
+.sign_btn{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}

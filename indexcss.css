@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Caramel&family=Poiret+One&family=Quicksand:wght@300&family=Signika:wght@300&family=Titan+One&display=swap');
+
+@font-face {
+    font-family: 'Manuscribe Free Ita0';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Manuscribe Free Ita0'), url('DoughImg/manuscribe-free-cufonfonts-webfont/ManuscribeFree-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'JosefinSans-Regular';
+    src: url(DoughImg/josefin-sans/JosefinSans-Regular.ttf);
+}
+body {
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.introNav {
+    /* border: 2px solid red; */
+    height: 97vh;
+    background-image: url(DoughImg/HomepgTheme\ \(2\)\ \(1\).jpeg);
+    background-attachment: fixed;
+}
+
+.dark {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.navbar {
+    /* width: fit-content; */
+    width: 100%;
+    height: 72px;
+    /* border: 2px solid red; */
+    display: flex;
+    padding-left: 20px;
+    padding-top: 19px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 1;
+}
+
+#nav1,
+#nav2 {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.hm {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Signika', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+.hello_usr{
+    width: fit-content;
+    margin-left: 19%;
+    margin-right: 5%;
+    margin-top: 16px;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    font-size: 23px;
+}
+.logo {
+
+    font-family: 'Manuscribe Free Ita0';
+    font-weight: bold;
+    color: white;
+    font-size: 55px;
+}
+
+.welcomeTo {
+    text-align: center;
+    color: white;
+    font-family: 'Caramel', cursive;
+    font-size: 50px;
+}
+
+.brand {
+    text-align: center;
+    color: white;
+    font-family: 'Manuscribe Free Ita0';
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.dscrptn {
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.rc_search {
+    /* text-align: center; */
+    border: 1px solid black;
+    /* width: fit-content; */
+    margin-left: 39%;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+}
+
+input:focus {
+    outline: none;
+}
+
+#search_dsh {
+    border: 0;
+    font-size: 20px;
+    font-weight: 60;
+    margin: 8px;
+}
+
+#search_icn {
+    margin-left: 15px;
+    margin-top: 8px;
+    font-size: 24px;
+}
+
+.introshow1 {
+    display: flex;
+}
+.introshow2{
+    display: flex;
+}
+.D_img{
+    width: fit-content;
+    height: fit-content;
+}
+.D_img_text {
+    /* position: absolute;
+    top: 106%;
+    right: -5%; */
+    /* background-color: white; */
+    margin-right: 40px;
+    width: 70%;
+}
+
+.D_img_cont {
+    /* font-family: 'Poiret One', regular; */
+    /* font-family: "bilo"; */
+    font-family: 'JosefinSans-Regular';
+    margin: 36px;
+    font-size: 23px;
+    width: 90%;
+}
+
+.D_img_title {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 40px;
+    margin: 36px;
+}
+.menu_txt{
+    width: 44%;
+    /* position: absolute;
+    top:160%; */
+    /* background-color: white; */
+}
+
+.menu_btn{
+    width: fit-content;
+    margin: auto;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 27px;
+}
+#menu_btn{
+    color: black;
+}
+.menu_btn:hover{
+    background-color: black;
+    /* color: white; */
+}
+.reviews_sec{
+    padding-top: 100px;
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    width: fit-content;
+}
+.review{
+    background-color: rgb(242, 242, 242);
+    height: 263px;
+    width: 425px;
+    margin-left: 26px;
+    margin-right: 26px;
+    animation: rev_ani 7s infinite;
+}
+.rev_name{
+    /* border: 1px solid red; */
+    padding: 4% 5%;
+    font-family: 'Signika', sans-serif;
+    font-size: 22px;
+}
+.rev_rating{
+    /* border: 1px solid green; */
+    padding-left: 21px;
+}
+.rating{
+    font-size: 13px!important;
+}
+.mess_quote{
+    text-align: end;
+    padding-right: 10px;
+}
+#quote{
+    font-size: 50px;
+}
+.mesg{
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+@keyframes rev_ani{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    80%{
+        transform: translateX(0px);
+        opacity:1
+    }
+    90%{
+        opacity:0;
+    }
+    100%{
+        transform: translateX(70px);
+        opacity: 0;
+    }
+}
+.d_footer{
+    background-color: rgb(39, 39, 39);
+}
+.footre_cont{
+    display: flex;
+}
+.f_title{
+    width: fit-content;
+    margin: auto;
+    color: white;
+    font-family: 'Manuscribe Free Ita0';
+    font-size: 70px;
+    padding: 10px;
+    border-top: 1px dotted white;
+    border-bottom: 1px dotted white;
+}
+.f_contacts{
+    width: fit-content;
+    margin: auto;
+    color: white;
+    font-family:'Quicksand', sans-serif ;
+    font-size: 20px;
+}
+.f_ani_rev{
+    width: 50%;
+    border-left: 1px solid white;
+}
+.rev_us{
+    width: fit-content;
+    margin: auto;
+    color: white;
+    font-family:'Quicksand', sans-serif ;
+    font-size: 20px;
+}
+.inac_cls{
+    display: none;
+}

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menucss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DoughNuts</title>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="dark">
+            <div class="navbar">
+                <div class="logo">DoughNuts</div>
+                <div class="navp1">
+                    <ul id="nav1">
+                        <li class="hm"><a href="index.html">Home</a></li>
+                        <li class="hm"><a href="menuhtml.html">Place Order</a></li>
+                    </ul>
+                </div>
+                <div class="navp2">
+                    <ul id="nav2">
+                        <li class="hm"><a href="loginhtml.html">Login</a></li>
+                        <li class="hm"><a href="SignUphtml.html">Signup</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="brand">Menu</div>
+            <div class="dscrptn">Experience the exautic diversity of Indian spices</div>
+        </div>
+    </div>
+    <div class="menu_content">
+        <div class="categories">
+            <ul class="cat_list">
+                <li><button class="d_cat_li" onclick="ab()">Assorted Beverages</button></li>
+                <li><button class="d_cat_li" onclick="sps()">Soups</button></li>
+                <li><button class="d_cat_li" onclick="tt()">Tazza Tarkariyan</button></li>
+                <li><button class="d_cat_li" onclick="rr()">Rice & Roll</button></li>
+                <li><button class="d_cat_li" onclick="ic_ds()">Ice creams & Deserts</button></li>
+            </ul>
+            <div class="billing">
+                <div class="bill_title">Your Order :</div>
+                <!-- <div class="pur_item">
+                    <div class="p_dish">Pina Colada</div>
+                    <div class="p_cost">340<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                </div>
+                <div class="pur_item">
+                    <div class="p_dish">Pina Colada</div>
+                    <div class="p_cost">340<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                </div>
+                <div class="pur_item">
+                    <div class="p_dish">Pina Colada</div>
+                    <div class="p_cost">340<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                </div>
+                <div class="pur_item">
+                    <div class="p_dish">Pina Colada</div>
+                    <div class="p_cost">340<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                </div> -->
+                <div class="total_bill pur_item" id="D_bill">
+                    <div class="p_dish"><b>Total</b></div>
+                    <div class="p_cost">0</i></div>
+                </div>
+                <div class="plc_order">
+                    <button id="odr_conf">Place Order</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_container">
+            <div class="menu_items b_btm" id="assor_bev">
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Blue Lagoon</b></div>
+                        <div class="i_dscrptn">
+                            A wonderful fizzy drink with blue curracao, creama nd soda
+                        </div>
+                    </div>
+                    <div class="price i_name">220<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Blue Lagoon','220')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Fruit Punch</b></div>
+                        <div class="i_dscrptn">
+                            An exotic mocktail with fruit pulp and dash of soda
+                        </div>
+                    </div>
+                    <div class="price i_name">200<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Fruit Punch','200')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Pina Colada</b></div>
+                        <div class="i_dscrptn">
+                            A tropical mocktail with pineapple juice and coconut cream
+                        </div>
+                    </div>
+                    <div class="price i_name">340<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Pina Colada','340')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Assorted Milk Shake</b></div>
+                        <div class="i_dscrptn">
+                            Cool refreshing beverage made with milk and ice cream of your choice
+                        </div>
+                    </div>
+                    <div class="price i_name">180<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Assorted Milk Shake','180')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Fresh Fruit Juice</b></div>
+                        <div class="i_dscrptn">
+                            Assorted seasonal fresh fruit juice served chilled
+                        </div>
+                    </div>
+                    <div class="price i_name">160<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Fresh Fruit Juice','160')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Cold Coffee</b></div>
+                        <div class="i_dscrptn">
+                            A chilled creamy Nescafe preparation
+                        </div>
+                    </div>
+                    <div class="price i_name">200<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Cold Coffee','200')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Lassi (Sweet/Salted)</b></div>
+                        <div class="i_dscrptn">
+                            A traditional North Indian drink made by blending yogurt salt/sugar and a dash of fresh creama
+                        </div>
+                    </div>
+                    <div class="price i_name">120<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Lassi','120')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Mango Lassi</b></div>
+                        <div class="i_dscrptn">
+                            Lassi with some mango twists
+                        </div>
+                    </div>
+                    <div class="price i_name">140<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Mango Lassi','140')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Butter Milk</b></div>
+                        <div class="i_dscrptn">
+                            The Authentic Indian Blend of yogurt with salt , coriander and cumin seeds
+                        </div>
+                    </div>
+                    <div class="price i_name">80<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Butter Milk','80')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Aerated Drinks</b></div>
+                        <div class="i_dscrptn">
+                            Assorted soft drinks
+                        </div>
+                    </div>
+                    <div class="price i_name">100<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Aerated Drinks','100')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="menu_items inac_cat" id="soups">
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Tomato Soup</b></div>
+                        <div class="i_dscrptn">
+                            A vegetable broth prepared using Garden Fresh Tomatoes, Herbs and Spices
+                        </div>
+                    </div>
+                    <div class="price i_name">140<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Tomato Soup','140')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Corn "N" Tomato Soup</b></div>
+                        <div class="i_dscrptn">
+                            A healthy soup made from Garden Fresh Tomatoes with boiled Corn Kernels scraped in
+                        </div>
+                    </div>
+                    <div class="price i_name">160<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Corn N Tomato Soup','160')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Sweet Corn Veg. Soup</b></div>
+                        <div class="i_dscrptn">
+                            A thick soup made from Fresh American Corns and Assorted Vegetables
+                        </div>
+                    </div>
+                    <div class="price i_name">160<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Sweet Corn Veg. Soup','160')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Manchow Soup</b></div>
+                        <div class="i_dscrptn">
+                            A popular Hot n Spicy Meal Soup prepared in Chinese style and served with Fried Noodles
+                        </div>
+                    </div>
+                    <div class="price i_name">140<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Manchow Soup','140')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Hot "N" Sour Soup</b></div>
+                        <div class="i_dscrptn">
+                            A dark brown Chinese Soup with stir fried minced vegetables, ginger and garlic
+                        </div>
+                    </div>
+                    <div class="price i_name">140<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Hot N Sour Soup','140')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="menu_items inac_cat" id="TT">
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>DoughNuts Special Vegetable</b></div>
+                        <div class="i_dscrptn">
+                            A specialty made by our chef with passion
+                        </div>
+                    </div>
+                    <div class="price i_name">320<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('DoughNuts Special Vegetable','320')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Khoya Kaju</b></div>
+                        <div class="i_dscrptn">
+                            Cashew nuts cooked in khoya rich mild gravy with lots of cream.
+                        </div>
+                    </div>
+                    <div class="price i_name">240<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Khoya Kaju','240')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Kaju Makhani</b></div>
+                        <div class="i_dscrptn">
+                            Choicest cashew nuts simmered in makhani gravy and cream.
+                        </div>
+                    </div>
+                    <div class="price i_name">260<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Kaju Makhani','260')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Navratan Korma</b></div>
+                        <div class="i_dscrptn">
+                            Idealy a combanation of nine choicest vegitables, fruits and nuts prepaid in rich mildgravy.
+                        </div>
+                    </div>
+                    <div class="price i_name">200<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Navratan Korma','200')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Veg. Toofani</b></div>
+                        <div class="i_dscrptn">
+                            Chefs special way of preparing the vegetables with ouch id north india.
+                        </div>
+                    </div>
+                    <div class="price i_name">180<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Veg. Toofani','180')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Veg. Makhanwala</b></div>
+                        <div class="i_dscrptn">
+                            Fresh vegetable cooked in makhani gravy.
+                        </div>
+                    </div>
+                    <div class="price i_name">220<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Veg. Makhanwala','220')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Veg. Kadai</b></div>
+                        <div class="i_dscrptn">
+                            Assorted garden fresh vegetables cooked in a mixture of makhani and onion gravy and served in a
+                            karahi.
+                        </div>
+                    </div>
+                    <div class="price i_name">220<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Veg. Kadai','220')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Veg. Jaipuri</b></div>
+                        <div class="i_dscrptn">
+                            A delicious and colorful vegetatiean dish prepared in onion gravy.
+                        </div>
+                    </div>
+                    <div class="price i_name">240<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Veg. Jaipuri','240')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Veg Diwani Handi</b></div>
+                        <div class="i_dscrptn">
+                            Garden fresh vegetable cooked with aromatic species and served in handi.
+                        </div>
+                    </div>
+                    <div class="price i_name">320<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Veg Diwani Handi','320')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="menu_items inac_cat" id="RR">
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>DoughNuts Special Pulao</b></div>
+                        <div class="i_dscrptn">
+                            Our Chef's special recipe preparation of basmati with zaffran flavor.
+                        </div>
+                    </div>
+                    <div class="price i_name">340<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('DoughNuts Special Pulao','340')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Avadhi Dum Biryani</b></div>
+                        <div class="i_dscrptn">
+                            Long grained rice fried in aromatic spices and herbs with fresh vegetables cooked in a handi.
+                        </div>
+                    </div>
+                    <div class="price i_name">240<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Avadhi Dum Biryani','240')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Hyderabadi Biryanie</b></div>
+                        <div class="i_dscrptn">
+                            The cooking recipe comes all the way from hyderabad - A special style of minty flavored rice
+                            with fried onions.
+                        </div>
+                    </div>
+                    <div class="price i_name">240<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Hyderabadi Biryanie','240')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Banarasi Pulao</b></div>
+                        <div class="i_dscrptn">
+                            A vegetable pulao prepared with indian spices.
+                        </div>
+                    </div>
+                    <div class="price i_name">220<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Banarasi Pulao','220')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Jeera Rice</b></div>
+                        <div class="i_dscrptn">
+                            Seasoned boiled basmati rice tossed in butter and cumin seeds.
+                        </div>
+                    </div>
+                    <div class="price i_name">160<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Jeera Rice','160')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Steamed Rice</b></div>
+                        <div class="i_dscrptn">
+                            Plane steamed rice.
+                        </div>
+                    </div>
+                    <div class="price i_name">100<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Steamed Rice','100')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="menu_items inac_cat" id="I_D">
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Vanila (100 gm)</b></div>
+                        <div class="i_dscrptn">
+                            Pure vanilla extract, milk, heavy whipping cream, and sugar.
+                        </div>
+                    </div>
+                    <div class="price i_name">80<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Vanila(100gm)','80')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Strawberry (100 gm)</b></div>
+                        <div class="i_dscrptn">
+                            Strawberry flavoring with the eggs, cream, vanilla and sugar
+                        </div>
+                    </div>
+                    <div class="price i_name">100<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Strawberry(100gm)','100')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Kesar Pista (100 gm)</b></div>
+                        <div class="i_dscrptn">
+                            Saffron, milk, sweetened condensed milk, chopped pistachios, and whipped cream.
+                        </div>
+                    </div>
+                    <div class="price i_name">120<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Kesar Pista (100gm)','120')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Chocolate Ice Cream (100 gm)</b></div>
+                        <div class="i_dscrptn">
+                            Chocolate flavoring with the eggs, cream, vanilla and sugar
+                        </div>
+                    </div>
+                    <div class="price i_name">100<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Chocolate Ice Cream(100gm)','100')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Butterscotch Ice Cream (100 gm)</b></div>
+                        <div class="i_dscrptn">
+    
+                        </div>
+                    </div>
+                    <div class="price i_name">100<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Butterscotch(100gm)','100')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="n_d">
+                        <div class="i_name"><b>Sizzling Brownie With Ice Cream (160 gm)</b></div>
+                        <div class="i_dscrptn">
+                            Delicious combination of hot brownie and cold ice cream
+                        </div>
+                    </div>
+                    <div class="price i_name">160<i class="fa-solid fa-indian-rupee-sign"></i></div>
+                    <div class="add_cart">
+                        <div class="bt_qty">
+                            <div class="btn"><button class="bt" onclick="add_to_bill('Brownie Ice Cream','160')">Add Item</button></div>
+                            <div class="qty">
+                                <div class="add_it">+</div>
+                                <div class="qty_num"></div>
+                                <div class="rem_it">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+    <div class="odr_modal" id="om">
+        <div class="card_title">Please enter your card details</div>
+        <div class="in_accNum">
+            <div class="acc_Num">Account number</div>
+            <div class="in_acc">
+                <input type="text" id="acc_numID">
+            </div>
+        </div>
+        <div class="in_accNum">
+            <div class="acc_Num">Card Holder Name</div>
+            <div class="in_acc">
+                <input type="text" id="crdHol_ID">
+            </div>
+        </div>
+        <div class="em_cvv">
+            <div class="em">
+                <div class="ex_mth">Expiry month</div>
+                <div class="in_acc">
+                    <input type="text" id="em_ID">
+                </div>
+            </div>
+            <div class="cvv">
+                <div class="cvv_Num">CVV</div>
+                <div class="in_acc">
+                    <input type="text" id="cvv_ID">
+                </div>
+            </div>
+        </div>
+        <div class="odr_disc">
+            <div class="cnf_order">
+                <button id="conf_odr">Confirm Order</button>
+            </div>
+            <div class="cns_order">
+                <button id="odr_cans">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="d_footer">
+        <br><br>
+        <div class="f_title">DoughNuts</div>
+        <br><br><br>
+        <div class="footre_cont">
+            <div class="f_contacts">
+                <div class="contact">
+                    <div class="fsbk"><a href="https://www.facebook.com/profile.php?id=100078703167513"
+                            target="_blank"><i class="fa-brands fa-facebook"></i> @Deep Prajapati</a></div><br>
+                    <div class="insta"><a href="https://www.instagram.com/deepinsta_69/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i> @deepinsta_69</a></div><br>
+                    <div class="mail"><a href="mailto: dp124551634@gmail.com" target="_blank"><i
+                                class="fa-solid fa-envelope"></i> dp124551634@gmail.com</a></div><br>
+                    <div class="phNum"><i class="fa-solid fa-phone"></i> +91 7436005772</div>
+                </div>
+            </div>
+            <div class="f_ani_rev">
+                <div class="rev_us"><i class="fa-regular fa-face-smile-beam"></i> Rate Us</div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </div>
+    <script src="menujs.js"></script>
+    <script src="menujs2.js"></script>
+</body>
+
+</html>
