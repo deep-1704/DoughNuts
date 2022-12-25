@@ -82,3 +82,32 @@ const ic_ds = () => {
         }
     })
 }
+// Star Highlighter ::
+
+let hlgt_prev_star = (e,idx) => {
+    let curr_ele = document.getElementsByClassName("str")[idx];
+
+    let sibling = curr_ele.previousElementSibling;
+    while (sibling) {
+        sibling.innerHTML = `<i class="fa-solid fa-star"></i>`;
+        sibling = sibling.previousElementSibling;
+    }
+
+    var start_x = (window.innerWidth/2) + (((window.innerWidth/2) - 207.5)/2);
+    var x_cor = e.clientX - (start_x + (idx*41.5));
+    if(x_cor < 5){
+        curr_ele.innerHTML = `<i class="fa-regular fa-star"></i>`;
+    }   
+    else if((x_cor > 5) && (x_cor < 18.25)){
+        curr_ele.innerHTML = `<i class="fa-solid fa-star-half-stroke"></i>`;
+    } 
+    else{
+        curr_ele.innerHTML = `<i class="fa-solid fa-star"></i>`;
+    }
+    // console.log(x_cor);
+    sibling = curr_ele.nextElementSibling;
+    while (sibling) {
+        sibling.innerHTML = `<i class="fa-regular fa-star"></i>`;
+        sibling = sibling.nextElementSibling;
+    }
+}
