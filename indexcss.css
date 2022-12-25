@@ -279,3 +279,22 @@ input:focus {
 .inac_cls{
     display: none;
 }
+.rev_str{
+    margin-top: 20px;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+#str_conatainer{
+    display: flex;
+    width: fit-content;
+}
+.str{
+    color: white;
+    font-size: 28px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    padding: 0;
+    background: none;
+}
