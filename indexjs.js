@@ -11,6 +11,8 @@ menu_btn_div.onmouseleave = () => {
     menu_btn.style.color = "black";
 }
 
+// Review section :: 
+
 var rev_all = document.getElementsByClassName("review");
 let i = -1;
 let count = 0;
@@ -22,22 +24,35 @@ if (count < rev_all.length) {
     setTimeout(() => {
         rev_all[j].classList.toggle("inac_cls");
     }, 7000);
-}
-else{
+} else {
     count = 0;
     i = -1;
 }
-if (count < rev_all.length) {
-    let j = ++i;
-    count++;
-    rev_all[j].classList.toggle("inac_cls");
-    setTimeout(() => {
+if(window.innerWidth > 956){
+    if (count < rev_all.length) {
+        let j = ++i;
+        count++;
         rev_all[j].classList.toggle("inac_cls");
-    }, 7000);
+        setTimeout(() => {
+            rev_all[j].classList.toggle("inac_cls");
+        }, 7000);
+    } else {
+        count = 0;
+        i = -1;
+    }
 }
-else{
-    count = 0;
-    i = -1;
+if(window.innerWidth > 1412){
+    if (count < rev_all.length) {
+        let j = ++i;
+        count++;
+        rev_all[j].classList.toggle("inac_cls");
+        setTimeout(() => {
+            rev_all[j].classList.toggle("inac_cls");
+        }, 7000);
+    } else {
+        count = 0;
+        i = -1;
+    }
 }
 
 setInterval(() => {
@@ -48,22 +63,35 @@ setInterval(() => {
         setTimeout(() => {
             rev_all[j].classList.toggle("inac_cls");
         }, 7000);
-    }
-    else{
+    } else {
         count = 0;
         i = -1;
     }
-    if (count < rev_all.length) {
-        let j = ++i;
-        count++;
-        rev_all[j].classList.toggle("inac_cls");
-        setTimeout(() => {
+    if(window.innerWidth > 956){
+        if (count < rev_all.length) {
+            let j = ++i;
+            count++;
             rev_all[j].classList.toggle("inac_cls");
-        }, 7000);
+            setTimeout(() => {
+                rev_all[j].classList.toggle("inac_cls");
+            }, 7000);
+        } else {
+            count = 0;
+            i = -1;
+        }
     }
-    else{
-        count = 0;
-        i = -1;
+    if(window.innerWidth > 1412){
+        if (count < rev_all.length) {
+            let j = ++i;
+            count++;
+            rev_all[j].classList.toggle("inac_cls");
+            setTimeout(() => {
+                rev_all[j].classList.toggle("inac_cls");
+            }, 7000);
+        } else {
+            count = 0;
+            i = -1;
+        }
     }
 }, 7000);
 
