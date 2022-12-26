@@ -111,3 +111,28 @@ let hlgt_prev_star = (e,idx) => {
         sibling = sibling.nextElementSibling;
     }
 }
+// Feedback section ::
+
+const rev_modal = () =>{
+    let feedback = document.getElementsByClassName("review_modal")[0];
+    feedback.style.display = "block";
+    feedback.style.animation = "feed_ani 0.5s linear";
+}
+
+const rem_feedback = () =>{
+    let feedback = document.getElementsByClassName("review_modal")[0];
+    feedback.style.animation = "rem_feed_ani 0.5s linear";
+    setTimeout(() => {
+        feedback.style.display = "none";
+    }, 499);
+}
+
+const sub_feedback = () =>{
+    let feedback = document.getElementsByClassName("review_modal")[0];
+    feedback.style.animation = "rem_feed_ani 0.5s linear";
+    setTimeout(() => {
+        feedback.style.display = "none";
+        alert("Thanks for the feedback :)");
+    }, 499);
+
+}
