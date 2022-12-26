@@ -152,7 +152,7 @@ input:focus {
     margin: 36px;
     font-size: 23px;
     width: 90%;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
 }
 
 .D_img_title {
