@@ -134,7 +134,7 @@ input:focus {
     display: flex;
 }
 .D_img{
-    width: fit-content;
+    width: 50%;
     height: fit-content;
 }
 .D_img_text {
@@ -142,7 +142,6 @@ input:focus {
     top: 106%;
     right: -5%; */
     /* background-color: white; */
-    margin-right: 40px;
     width: 70%;
 }
 
@@ -153,6 +152,7 @@ input:focus {
     margin: 36px;
     font-size: 23px;
     width: 90%;
+    letter-spacing: 2px;
 }
 
 .D_img_title {
