@@ -1,8 +1,13 @@
 const check_cred = () =>{
-    if((localStorage.key(0) != null) && (localStorage.getItem("userName") == document.getElementById("usrName").value) && (localStorage.getItem("password") == document.getElementById("pswrd").value)){
-        
+    let sub_usrname = document.getElementById("login_usrname").value;
+    let sub_pass = document.getElementById("login_pass").value;
+
+    if((localStorage.length < 3) || (localStorage.getItem("username") != sub_usrname) || (localStorage.getItem("password") != sub_pass)){
+        alert("User don't exist! / Invalid credentials!");
     }
     else{
-        alert("Invalid Username/Password!");
+        alert(`Welcome ${localStorage.getItem("firstName")}`);
+        localStorage.setItem("login",true);
+        location.replace("index.html")
     }
 }
