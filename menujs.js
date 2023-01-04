@@ -6,12 +6,12 @@ var conf1 = document.getElementById("conf_odr");
 var odr_modal = document.getElementById("om");
 
 btn1.onclick = () => {
-    if ((localStorage.key(0) != null) && (localStorage.getItem("userName") != '')) {
+    if (localStorage.getItem("login") == true) {
         odr_modal.style.display = "block";
         odr_modal.style.animation = "move_down 0.2s linear";
     }
     else{
-        alert("Please SignUp to order!");
+        alert("Please Login to order!");
     }
 }
 cans1.onclick = () => {
