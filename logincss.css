@@ -20,71 +20,77 @@ a{
 input{
     all:unset;
 }
-.button{
+.login_container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.login_cont{
+    width: 40%;
+}
+.login_img{
+    width: 60%;
+    background-image: url("DoughImg/login_img2.jpeg");
+    height: 408px;
+}
+.dark{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+.login_brand{
+    font-family: 'Manuscribe Free Ita0';
+    color: white;
+    font-size: 50px;
+    width: fit-content;
+    margin: auto;
+}
+.login_wlcm1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+    /* text-align: center; */
+}
+.login_wlcm2{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(84, 84, 84);
+    /* text-align: center; */
+    margin-top: 5px;
+}
+.login_cred{
+    margin-top: 20px;
+}
+.cred_title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    color: rgb(84, 84, 84);
+}
+.cred_entry{
+    border: 0.3px solid rgb(71, 71, 71);
+    width: 70%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    padding: 5px;
+}
+.login_btn{
+    margin-top: 20px;
+}
+.signin_btn{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    background-color: white;
+    border: 0.6px solid black;
+    padding: 8px 15px 8px 15px;
+}
+.signin_btn:hover{
+    color: white;
+    background-color: rgb(6, 163, 0);
     border: none;
 }
-.container{
-    margin: 100px auto 0 auto;
-    width: 50%;
-    display: flex;
-}
-.doughnuts{
-    width: 12%;
-}
-.letter{
-    font-family: 'Manuscribe Free Ita0';
-    font-size: 50px;
-    margin: 15px;
-}
-.signup_ctnt{
-    padding-left: 30px;
-    width: 88%;
-    border-left: 1px solid black;
-}
-.s_title{
+.signup{
     font-family: 'Quicksand', sans-serif;
-    font-size: 40px;
-    margin: 6px 0px 6px 0px;
+    color: rgb(84, 84, 84);
+    margin-top: 40px;
 }
-.fn_ln{
-    display: flex;
-    margin: 20px 0 20px 0;
-}
-.name{
-    font-family: 'Signika', sans-serif;
-    font-size: 24px;
-}
-.fn{
-    width: 47.5%;
-}
-.ln{
-    width: 47.5%;
-    margin-left: 5%;
-}
-.inp{
-    border: 1px solid black;
-    border-radius: 13px;
-    height: 46px;
-    width: 100%;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    padding-left: 5px;
-}
-.usr_name,.pass{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.sub_btn{
-    display: flex;
-}
-.signUp,.cans{
-    margin: 0 10px 0 10px;
-}
-.sign_btn{
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 13px;
-    font-size: 20px;
-    padding: 10px;
-    cursor: pointer;
+.signup_btn{
+    color: rgb(6, 163, 0);
 }
