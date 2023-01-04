@@ -20,70 +20,76 @@ a{
 input{
     all:unset;
 }
-.button{
-    border: none;
-}
-.container{
-    margin: 100px auto 0 auto;
-    width: 50%;
+.signup_container{
+    width: 80%;
+    margin: auto;
     display: flex;
 }
-.doughnuts{
-    width: 12%;
+.signup_cont{
+    width: 40%;
 }
-.letter{
+.signup_img{
+    background-image: url("DoughImg/signup_img2.jpeg");
+    height: 579px;
+    width: 60%;
+}
+.dark{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+.signup_brand{
+    color: white;
     font-family: 'Manuscribe Free Ita0';
     font-size: 50px;
-    margin: 15px;
+    text-align: center;
 }
-.signup_ctnt{
-    padding-left: 30px;
-    width: 88%;
-    border-left: 1px solid black;
-}
-.s_title{
+.signup_wlcm1{
     font-family: 'Quicksand', sans-serif;
-    font-size: 40px;
-    margin: 6px 0px 6px 0px;
+    font-size: 35px;
+    /* text-align: center; */
 }
-.fn_ln{
-    display: flex;
-    margin: 20px 0 20px 0;
-}
-.name{
-    font-family: 'Signika', sans-serif;
-    font-size: 24px;
-}
-.fn{
-    width: 47.5%;
-}
-.ln{
-    width: 47.5%;
-    margin-left: 5%;
-}
-.inp{
-    border: 1px solid black;
-    border-radius: 13px;
-    height: 46px;
-    width: 100%;
+.signup_wlcm2{
     font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    padding-left: 5px;
+    color: rgb(84, 84, 84);
+    /* text-align: center; */
+    margin-top: 5px;
 }
-.usr_name,.pass,.cnf_pass,.address{
-    margin-bottom: 20px;
+.signup_cred{
+    margin-top: 20px;
 }
-.sub_btn{
-    display: flex;
+.cred_title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    color: rgb(84, 84, 84);
 }
-.signUp,.cans{
-    margin: 0 10px 0 10px;
+.cred_entry{
+    border: 0.3px solid rgb(71, 71, 71);
+    width: 70%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    padding: 5px;
 }
-.sign_btn{
+.signup_btn{
+    margin-top: 20px;
+}
+.signup{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
     background-color: white;
-    border: 1px solid black;
-    border-radius: 13px;
-    font-size: 20px;
-    padding: 10px;
-    cursor: pointer;
+    border: 0.6px solid black;
+    padding: 8px 15px 8px 15px;
+}
+.signup:hover{
+    color: white;
+    background-color: rgb(6, 163, 0);
+    border: none;
+}
+@keyframes warn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
