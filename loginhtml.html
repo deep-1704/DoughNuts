@@ -8,37 +8,33 @@
     <title>Login | DoughNuts</title>
 </head>
 <body>
-    <div class="container">
-        <div class="doughnuts">
-            <div class="letter">D</div>
-            <div class="letter">o</div>
-            <div class="letter">u</div>
-            <div class="letter">g</div>
-            <div class="letter">h</div>
-            <div class="letter">n</div>
-            <div class="letter">u</div>
-            <div class="letter">t</div>
-            <div class="letter">s</div>
+    <br><br><br><br><br><br>
+    <div class="login_container">
+        <div class="login_cont">
+            <div class="login_wlcm1">Welcome Back</div>
+            <div class="login_wlcm2">Sign in with your username and password</div>
+
+            <div class="login_cred">
+                <div class="cred_title">Username</div>
+                <input type="text" class="cred_entry" id="login_usrname">
+            </div>
+            <div class="login_cred">
+                <div class="cred_title">Password</div>
+                <input type="password" class="cred_entry" id="login_pass">
+            </div>
+
+            <div class="login_btn">
+                <button class="signin_btn" onclick="check_cred()">Sign in</button>
+            </div>
+
+            <div class="signup">Don't have an account? <span><a href="SignUphtml.html" class="signup_btn">SignUp</a></span></div>
         </div>
-
-        <div class="signup_ctnt">
-            <div class="s_title">Login</div>
-            <div class="usr_name">
-                <div class="name">Username</div>
-                <div class="name_inp"><input class="inp" type="text" id="usrName"></div>
-            </div>
-            <div class="pass">
-                <div class="name">Password</div>
-                <div class="name_inp"><input class="inp" type="password" id="pswrd"></div>
-            </div>
-
-            <div class="sub_btn">
-                <div class="signUp"><button class="sign_btn" onclick="check_cred()"><a href="index.html">Login</a></button></div>
-                <div class="cans"><button class="sign_btn"><a href="index.html">Cancel</a></button></div>
+        <div class="login_img">
+            <div class="dark"><br><br><br><br><br><br><br><br><br><br>
+                <div class="login_brand">DoughNuts</div>
             </div>
         </div>
     </div>
-
     <script src="loginjs.js"></script>
 </body>
 </html>
