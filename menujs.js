@@ -32,6 +32,16 @@ conf1.onclick = () => {
 
 // Categories selection ::
 
+// By default category;
+document.getElementsByClassName("d_cat_li")[0].classList.add("b_btm");
+document.getElementById("assor_bev").classList.remove("inac_cat");
+window.addEventListener("click", function (e) {
+    if (document.getElementsByClassName("d_cat_li")[0].contains(e.target) || this.document.getElementsByClassName("menu_container")[0].contains(e.target)) {} else {
+        document.getElementsByClassName("d_cat_li")[0].classList.remove("b_btm");
+        document.getElementById("assor_bev").classList.add("inac_cat");
+    }
+})
+
 const ab = () => {
     document.getElementsByClassName("d_cat_li")[0].classList.add("b_btm");
     document.getElementById("assor_bev").classList.remove("inac_cat");
