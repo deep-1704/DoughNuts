@@ -153,6 +153,7 @@ input:focus {
     font-size: 23px;
     width: 90%;
     letter-spacing: 0.5px;
+    line-height: 1.3;
 }
 
 .D_img_title {
